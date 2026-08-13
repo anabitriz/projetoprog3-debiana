@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "debiana",
+    "slug": "debiana",
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "5d34f3aa-0049-42bd-806e-9d05d2030cee"
+      }
+    }
+  }
+}
