@@ -18,11 +18,6 @@ import * as Notifications from "expo-notifications";
 import * as Device from "expo-device";
 import Constants from "expo-constants";
 
-
-// =====================================================
-// CONFIGURAÇÃO
-// =====================================================
-
 const SUPABASE_URL =
   "https://cgdkhufktnclezagrhek.supabase.co/rest/v1/usuario";
 
@@ -35,10 +30,6 @@ const headersSupabase = {
   "Content-Type": "application/json",
 };
 
-
-// =====================================================
-// TOKEN PUSH
-// =====================================================
 
 async function obterTokenPush() {
   try {
@@ -102,11 +93,6 @@ async function obterTokenPush() {
     throw error;
   }
 }
-
-
-// =====================================================
-// SCREEN
-// =====================================================
 
 export default function CadastroScreen({ navigation }) {
 
@@ -507,11 +493,6 @@ export default function CadastroScreen({ navigation }) {
     </ScrollView>
   );
 }
-
-
-// =====================================================
-// ESTILOS
-// =====================================================
 
 const styles = StyleSheet.create({
 
