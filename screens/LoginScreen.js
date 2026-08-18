@@ -13,11 +13,6 @@ import {
 
 import { Ionicons } from "@expo/vector-icons";
 
-
-// =====================================================
-// SUPABASE
-// =====================================================
-
 const SUPABASE_URL =
   "https://cgdkhufktnclezagrhek.supabase.co/rest/v1/usuario";
 
@@ -30,10 +25,6 @@ const headersSupabase = {
   "Content-Type": "application/json",
 };
 
-
-// =====================================================
-// SCREEN
-// =====================================================
 
 export default function LoginScreen({ navigation }) {
 
@@ -296,9 +287,6 @@ export default function LoginScreen({ navigation }) {
 }
 
 
-// =====================================================
-// ESTILOS
-// =====================================================
 
 const styles = StyleSheet.create({
 
