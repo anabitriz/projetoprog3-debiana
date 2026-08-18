@@ -11,10 +11,6 @@ import {
 import * as Notifications from "expo-notifications";
 
 
-// =====================================================
-// CONFIGURAÇÃO DAS NOTIFICAÇÕES
-// =====================================================
-
 Notifications.setNotificationHandler({
 
   handleNotification: async () => ({
@@ -34,10 +30,6 @@ Notifications.setNotificationHandler({
 });
 
 
-// =====================================================
-// SCREENS
-// =====================================================
-
 import CadastroScreen
   from "./screens/CadastroScreen";
 
@@ -48,17 +40,11 @@ import EnviarNotificacaoScreen
   from "./screens/EnviarNotificacaoScreen";
 
 
-// =====================================================
-// NAVEGAÇÃO
-// =====================================================
 
 const Stack =
   createNativeStackNavigator();
 
 
-// =====================================================
-// APP
-// =====================================================
 
 export default function App() {
 
