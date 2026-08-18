@@ -15,10 +15,6 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 
 
-// =====================================================
-// SUPABASE
-// =====================================================
-
 const SUPABASE_URL =
   "https://cgdkhufktnclezagrhek.supabase.co/rest/v1/usuario";
 
@@ -30,11 +26,6 @@ const headersSupabase = {
   Authorization: `Bearer ${SUPABASE_KEY}`,
   "Content-Type": "application/json",
 };
-
-
-// =====================================================
-// SCREEN
-// =====================================================
 
 export default function EnviarNotificacaoScreen({
   navigation,
@@ -67,9 +58,6 @@ export default function EnviarNotificacaoScreen({
     useState(false);
 
 
-  // =====================================================
-  // BUSCAR USUÁRIOS
-  // =====================================================
 
   useEffect(() => {
 
@@ -126,11 +114,6 @@ export default function EnviarNotificacaoScreen({
 
     }
   }
-
-
-  // =====================================================
-  // ENVIAR NOTIFICAÇÃO
-  // =====================================================
 
   async function enviarNotificacao() {
 
@@ -470,9 +453,7 @@ export default function EnviarNotificacaoScreen({
       </ScrollView>
 
 
-      {/* =================================================
-          MODAL DE USUÁRIOS
-      ================================================= */}
+      {/* lista de usuarios */}
 
       <Modal
         visible={mostrarUsuarios}
@@ -590,10 +571,6 @@ export default function EnviarNotificacaoScreen({
   );
 }
 
-
-// =====================================================
-// ESTILOS
-// =====================================================
 
 const styles = StyleSheet.create({
 
